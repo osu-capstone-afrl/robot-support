@@ -1,0 +1,4 @@
+
+<launch>
+	<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find nikon_d5600_support)/urdf/gp7_d5600.xacro'" />
+</launch>
