@@ -1,11 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
-    package: motoman_gp7_support
-    relative_path: urdf/gp7.xacro
+    package: nikon_d5600_support
+    relative_path: urdf/gp7_d5600.xacro
     xacro_args: ""
   SRDF:
     relative_path: config/motoman_gp7.srdf
   CONFIG:
-    author_name: Adam Buynak
-    author_email: buynak.9@buckeyemail.osu.edu
+    author_name: abuynak
+    author_email: acbuynak@gmail.com
     generated_timestamp: 1603074089
