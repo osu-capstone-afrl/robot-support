@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:macro name="gp7_cart" params="prefix">
+
+<!-- Motoman Training Cart URDF -->
+
+    <link name="${prefix}cart_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_cart/meshes/robot_cart_visual_1.stl"/>
+            </geometry>
+            <material name="table">
+                <color rgba="0.8 0.8 0.8 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_cart/meshes/robot_cart_collision.stl"/>
+            </geometry>
+        </collision>
+    </link>
+ 
+</xacro:macro>
+</robot>
