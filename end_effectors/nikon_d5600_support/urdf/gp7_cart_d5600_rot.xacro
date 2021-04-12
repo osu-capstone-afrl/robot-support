@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<robot name="robot_gp7_d5600" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- Robot -->
+    <xacro:include filename="$(find robot_cart)/urdf/gp7_cart_macro.xacro" />
+
+
+    <!-- End Effector -->
+    <xacro:include filename="$(find nikon_d5600_support)/urdf/d5600_rot_macro.xacro" />
+    
+
+    <!-- Build Kinematic Chain using imported components -->
+    <xacro:robot_gp7_cart prefix=""/>
+    <xacro:nikon_d5600_rot prefix=""/>
+
+    <joint name="tool0-camera_link" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="tool0"/>
+        <child link="camera_link"/>
+    </joint>
+
+</robot>
