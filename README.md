@@ -1,5 +1,7 @@
 # MetaPackage for Robot Descriptions/Support Code
 
+![Build Status: Github Actions - Melodic](https://github.com/osu-capstone-afrl/robot-support/actions/workflows/ci_Focal_Melodic.yml/badge.svg)
+
 Includes copy of the motoman GP7 robot support package, end effector urdf's, and moveit configs.
 
 ## Packages Contained
